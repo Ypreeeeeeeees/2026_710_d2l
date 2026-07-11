@@ -1,2 +1,2 @@
-# 26716_missing_semester
-my note and homework about MIT The Missing Semester of Your CS Education
+# 2026_710_d2l
+my note and homework about 《dive into deep-learning》.
