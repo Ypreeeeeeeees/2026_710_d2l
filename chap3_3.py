@@ -30,9 +30,9 @@ for epoch in range(num_epochs):
         trainer.zero_grad()
         l.sum().backward()
         trainer.step()
-        with torch.no_grad():
-            train_l=loss(net(batch_X),batch_y)/2
-            print(f'epoch{epoch+1} , loss {float(train_l.mean()):f}')
+    with torch.no_grad():
+        train_l = loss(net(X), y) / 2
+        print(f'epoch{epoch + 1} , loss {float(train_l.mean()):f}')
 
 w=net[0].weight.data
 print(w)
